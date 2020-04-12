@@ -224,7 +224,20 @@ body {
     .header__link a {
       font-family: OswaldRegular;
       text-decoration: none;
-      color: #ffffff; }
+      color: #ffffff;
+      transition: 0.4s;
+      height: 57px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header__link a:hover {
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+        animation: line 1s; }
+      .header__link a:hover {
+        color: #d94f5c; }
+      .header__link a:not(:last-child) {
+        margin-right: 30px; }
   .header__logo a {
     color: #ffffff;
     text-decoration: none;
@@ -261,93 +274,9 @@ body {
     color: #ffffff;
     text-shadow: #fff 0 0 5px, #fff 0 0 0, #fff 0 0 0, #fff 0 0 20px, #fff 0 0 30px, #fff 0 0 40px, #fff 0 0 50px, #fff 0 0 75px; }
 
-body {
-  margin: 0; }
-
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 48px; }
-
-p {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size: 14px;
-  color: #333333; }
-
-.liner {
-  display: none;
-  position: relative;
-  text-align: center;
-  background: #000;
-  color: white;
-  width: 100%;
-  margin-top: -10px; }
-
-.logo {
-  width: 50px;
-  fill: white;
-  padding-right: 15px;
-  display: inline-block;
-  vertical-align: middle; }
-
-.inner-header {
-  height: 65vh;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  min-height: 100px;
-  max-height: 150px; }
-
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: white; }
-
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; }
-  .parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s; }
-  .parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s; }
-  .parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s; }
-  .parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s; }
-
-@keyframes move-forever {
+@keyframes line {
   0% {
-    transform: translate3d(-90px, 0, 0); }
-  100% {
-    transform: translate3d(85px, 0, 0); } }
-
-/*Shrinking for mobile */
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px; }
-  .content {
-    height: 30vh; }
-  h1 {
-    font-size: 24px; } }
+    background-position-x: 390px; } }
 
 .transf:nth-child(1) {
   display: none; }
@@ -1265,7 +1194,7 @@ p {
   .skills {
     height: 1100px; }
   .portfolio {
-    height: 110vh; } }
+    height: 133vh; } }
 
 @media (max-width: 991px) {
   .header__container {
@@ -1283,7 +1212,8 @@ p {
   .header__name {
     width: 100%; }
     .header__name a {
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 80px; }
   .header__content {
     text-align: center; }
   .header__contain {
@@ -1301,7 +1231,7 @@ p {
   .skills {
     height: 1340px; }
   .portfolio {
-    height: 153vh; } }
+    height: 175vh; } }
 
 @media (max-width: 768px) {
   .liner {
@@ -1346,7 +1276,7 @@ p {
   .about__text p {
     font-size: 19px; }
   .portfolio {
-    height: 277vh; }
+    height: 315vh; }
     .portfolio__box {
       margin-top: 130px; }
     .portfolio__items a img {
