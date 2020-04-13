@@ -25,24 +25,6 @@
   src: url("fonts/Vibur-Regular.ttf");
   /* Путь к файлу со шрифтом */ }
 
-@font-face {
-  font-family: RuslanDisplayRegular;
-  /* Имя шрифта */
-  src: url("fonts/Exodus-PersonalUse-Striped.otf");
-  /* Путь к файлу со шрифтом */ }
-
-@font-face {
-  font-family: RuslanDisplay;
-  /* Имя шрифта */
-  src: url("fonts/RuslanDisplay-Regular.ttf");
-  /* Путь к файлу со шрифтом */ }
-
-@font-face {
-  font-family: LobsterRegular;
-  /* Имя шрифта */
-  src: url("fonts/Lobster-Regular.ttf");
-  /* Путь к файлу со шрифтом */ }
-
 i {
   font-family: fontawesome !important; }
 
@@ -1153,6 +1135,10 @@ body {
   border: 1px solid #000;
   transition: 1s all; }
   .btn__up a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
     text-decoration: none;
     font-size: 22px;
     color: #fff; }
@@ -1256,6 +1242,10 @@ body {
   .about__text h3 {
     font-size: 60px; } }
 
+@media (max-width: 578px) {
+  .skills {
+    height: 2493px; } }
+
 @media (max-width: 575px) {
   .header__container {
     width: 302px; }
@@ -1276,7 +1266,7 @@ body {
   .about__text p {
     font-size: 19px; }
   .portfolio {
-    height: 315vh; }
+    height: 188vh; }
     .portfolio__box {
       margin-top: 130px; }
     .portfolio__items a img {
@@ -1301,3 +1291,7 @@ body {
 @media (max-width: 562px) {
   .skills {
     height: 2480px; } }
+
+@media (max-width: 516px) {
+  .portfolio {
+    height: 320vh; } }

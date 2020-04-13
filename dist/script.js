@@ -721,8 +721,16 @@ let images = (images, modalImages, modalTab, caption, closes) => {
           modImg.src = element.getAttribute('src');
         });
         captionText.forEach(capText => {
-          capText.innerHTML = element.getAttribute('alt');
+          capText.innerHTML = element.getAttribute('data-name');
+          capText.href = element.getAttribute("alt");
         });
+      });
+    });
+  });
+  captionText.forEach(res => {
+    res.addEventListener("click", () => {
+      modal.forEach(items => {
+        items.style.display = "none";
       });
     });
   });
