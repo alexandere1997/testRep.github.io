@@ -25,6 +25,10 @@
   src: url("fonts/Vibur-Regular.ttf");
   /* Путь к файлу со шрифтом */ }
 
+@font-face {
+  font-family: ExodusPersonalUseStriped;
+  src: url("fonts/Exodus-PersonalUse-Striped.otf"); }
+
 i {
   font-family: fontawesome !important; }
 
@@ -241,7 +245,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 40px; }
   .header__subtitle {
-    font-family: RuslanDisplayRegular;
+    font-family: ExodusPersonalUseStriped;
     background: linear-gradient(45deg, #f55f49 0, #ffae27 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1155,7 +1159,9 @@ body {
   .cooperate__paralax {
     display: none; }
   .cooperate__parallax {
-    display: none; } }
+    display: none; }
+  .portfolio {
+    height: 110vh; } }
 
 @media (max-width: 1199px) {
   .header__container {

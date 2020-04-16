@@ -14,6 +14,10 @@
   font-family: ViburRegular; /* Имя шрифта *///////////
   src: url("fonts/Vibur-Regular.ttf"); /* Путь к файлу со шрифтом */
  }
+ @font-face{
+   font-family: ExodusPersonalUseStriped;
+   src: url("fonts/Exodus-PersonalUse-Striped.otf");
+ }
  @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
  i {
   font-family: fontawesome !important;
